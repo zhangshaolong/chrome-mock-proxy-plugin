@@ -1,0 +1,26 @@
+{
+    "name": "Chrome request handler",
+    "description": "for web request proxy or mock, and auto proxy cookie for target domain",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": ["https://*/*", "http://*/*"],
+    "permissions": ["storage", "activeTab", "scripting", "proxy", "cookies"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "imgs/icon.png",
+          "32": "imgs/icon.png",
+          "48": "imgs/icon.png",
+          "128": "imgs/icon.png"
+        }
+    },
+    "icons": {
+        "16": "imgs/icon.png",
+        "32": "imgs/icon.png",
+        "48": "imgs/icon.png",
+        "128": "imgs/icon.png"
+    }
+}
